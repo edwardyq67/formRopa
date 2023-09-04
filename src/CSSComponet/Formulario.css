@@ -1,0 +1,18 @@
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: center;
+    font-family: sans-serif;
+}
+.ropa{
+    flex-grow: 1;
+    
+        margin: 20px;
+        max-width: 300px;
+        border: 2px solid #333;
+        padding: 0 20px 20px;
+        transition: all ease .2s;
+        border-radius: 10px;
+        cursor: pointer;
+}

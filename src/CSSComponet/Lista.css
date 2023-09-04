@@ -1,0 +1,153 @@
+.importImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Informacion input{
+    padding: 5px;
+    display: flex;
+    margin: 10px 0;
+    border: none;
+    width: 60%;
+    outline: none;
+    border-bottom:2px solid black ;
+    color: rgb(132, 40, 40);
+    font-weight: 800;
+  }
+  .Informacion input:hover{
+    outline: none;
+    
+  }
+  
+  .Informacion input::placeholder{
+    color: aqua;
+    font-weight: 600;
+  }
+  .buton{
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(32, 209, 209);
+    border: none;
+    background-color: black;
+    font-weight: 600;
+    font-family: sans-serif;
+    transition: all ease 0.3s;
+    cursor: pointer;
+  }
+  .buton:hover{
+    transform: scale(1.05);
+    color: rgb(0, 255, 255);
+  }
+  @media (min-width: 1025px) {
+    .Fromulario{
+    
+    margin: 40px auto;
+    width: 90%;
+    
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 2fr 1fr;
+    
+    
+  }
+    .Informacion{
+      display: grid;
+      
+    }
+    .nombre{
+      grid-column: 1/3;
+      
+    }
+    .nombre input{
+      width: 100%;
+    }
+    .precionar{
+      display: grid;
+      
+      grid-template-columns: 1fr;
+    }
+    
+    .versatil{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      border: none;
+      outline: none;
+    }
+    .versatil select{
+      border: none;
+      cursor: pointer;
+      outline: none;
+    }
+    
+    .genero{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      border: none;
+      outline: none;
+    }
+    .genero select{
+      border: none;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+  @media (max-width: 1024px){
+    .Fromulario{
+      
+      margin: 40px auto;
+      width: 90%;
+      
+      display: grid;
+      
+      grid-template-rows: 1fr 1fr 1fr;
+      
+      
+    }
+    .Informacion{
+      display: grid;
+      
+    }
+    .nombre{
+      grid-column: 1/3;
+      
+    }
+    .nombre input{
+      width: 100%;
+    }
+    .precionar{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .versatil{
+      
+      display: flex;
+      justify-content: center;
+      align-content: start;
+      border: none;
+      outline: none;
+    }
+    .versatil select{
+      border: none;
+      cursor: pointer;
+      outline: none;
+      padding: 5px;
+    }
+    
+    .genero{
+      display: flex;
+      justify-content: center;
+      align-content: start;
+      border: none;
+      outline: none;
+    }
+    .genero select{
+      border: none;
+      cursor: pointer;
+      outline: none;
+    }
+    .genero option{
+      padding: 50px;
+    }
+  }
